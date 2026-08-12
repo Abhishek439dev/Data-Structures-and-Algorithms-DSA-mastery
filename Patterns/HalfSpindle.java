@@ -1,15 +1,18 @@
 package com;
 
 public class HalfSpindle {
+//To print half spindle we can print half upright right traingle and then half inverted rihht angle triangle.
 	
 	void PrintTriangle(int n) {
-		for (int i =0; i<=n; i++) {
+		//Printing half upright triangle 
+		for (int i =0; i<=n; i++) { 
 			for(int j =0; j<=i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
-		
+
+		//Printing half inverted triangle.
 		for(int i =0; i<n; i++) {
 			for(int j = i; j<n; j++) {
 				System.out.print("*");
