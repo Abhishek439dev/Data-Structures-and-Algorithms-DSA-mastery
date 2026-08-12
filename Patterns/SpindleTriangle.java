@@ -1,33 +1,37 @@
 package com;
 
 public class SpindleTriangle {
-
-void PrintTriangle(int n) {
-		
+//This program prints a spindle or starshaped pattern of *.
+// We can create it in two parts the first half loop prints the upper half 
+//and the other half of code prints the remaining half of pattern.
+    //This function prints the pattern.
+  void PrintTriangle(int n) {
+		//This set of loop prints upper half
 		for(int i = 1; i<=n; i++) {
 			
-			for(int j = 1; j<=(n-i); j++) {
+			for(int j = 1; j<=(n-i); j++) {    //First inner loop: Prints spaces.
 				System.out.print(" ");
 			}
-			for(int j = 1; j<=(i*2)-1; j++ ) {
+			for(int j = 1; j<=(i*2)-1; j++ ) {  //Second inner loop: Print stars
 				System.out.print("*");
 			}
-			for(int j = 1; j<=(n-i); j++) {
+			for(int j = 1; j<=(n-i); j++) {   //Third inner loop: Prints spaces.
 				System.out.print(" ");
 			}
 			
 			System.out.println();
 		}
-		
-		for(int i = 1; i<=n; i++) {
+
+	    //This set of loop prints lower half
+		for(int i = 1; i<=n; i++) {  //Outer loop: determines number of lines
 			
-			for(int j = 1; j<i; j++) {
+			for(int j = 1; j<i; j++) { //First inner loop: Print spaces.
 				System.out.print(" ");
 			}
-			for(int j = 1; j<=((n-i)*2)+1; j++ ) {
+			for(int j = 1; j<=((n-i)*2)+1; j++ ) { //Second inner loop: Print stars
 				System.out.print("*");
 			}
-			for(int j = 1; j<i; j++) {
+			for(int j = 1; j<i; j++) { //Third inner loop: Prints spaces.
 				System.out.print(" ");
 			}
 			
@@ -36,8 +40,8 @@ void PrintTriangle(int n) {
 	}
 
  public static void main(String[] args) {
-	 SpindleTriangle ST = new SpindleTriangle();
-	 ST.PrintTriangle(4);
+	 SpindleTriangle ST = new SpindleTriangle(); //Object creation 
+	 ST.PrintTriangle(4); //Method called.
 }
 }
 
