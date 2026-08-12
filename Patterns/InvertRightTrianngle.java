@@ -1,7 +1,10 @@
 package com;
 
 public class InvertRightTrianngle {
+//This program prints inverted right angle triangle pattern of *
+//There can be multiple ways to print this pattern.
 
+	//1) First way.
 	void PrintInvert(int n){
 		
 		for(int i = 0; i<n; i++) {
@@ -11,7 +14,7 @@ public class InvertRightTrianngle {
 			System.out.println();
 		}
 	}
-	
+	//2) Second way.
 	void PrintInvert2(int n){
 		
 		for(int i = 0; i<=n; i++) {
@@ -21,7 +24,7 @@ public class InvertRightTrianngle {
 			System.out.println();
 		}
 	}
-	
+	//3) Third way.
 	void PrintInvert3(int n) {
 		for(int i =0; i<n; i++) {
 			for(int j = i; j<n; j++) {
