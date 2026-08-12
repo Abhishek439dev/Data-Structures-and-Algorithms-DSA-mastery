@@ -1,7 +1,7 @@
 package com;
 
 public class AlternateOneZero {
-
+//This program prints alternate number traingle
 	void PrintTriangle(int n) {
 		
 		for(int i =1; i<=n; i++) {
