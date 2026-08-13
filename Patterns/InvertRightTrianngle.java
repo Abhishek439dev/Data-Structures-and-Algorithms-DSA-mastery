@@ -35,7 +35,8 @@ public class InvertRightTrianngle {
 	}
 	
 	public static void main(String[] args) {
-		InvertRightTrianngle IRT = new InvertRightTrianngle();
+		InvertRightTrianngle IRT = new InvertRightTrianngle();  //Object creation
+		//Methods called
 		IRT.PrintInvert(4);
 		System.out.println();
 		IRT.PrintInvert2(4);
@@ -43,3 +44,23 @@ public class InvertRightTrianngle {
 		IRT.PrintInvert3(4);
 		}
 }
+/*
+
+****
+***
+**
+*
+
+****
+***
+**
+*
+
+
+****
+***
+**
+*
+
+*/
+
